@@ -30,7 +30,7 @@ function refrescarUbicacion(){
 			lat=position.coords.latitude;
 			lon=position.cooords.longitude;
 			latlon=new google.maps.LatLng(lat,lon)
-			mapholder=document.getElementById('mapholder')
+			mapholder=document .getElementById('mapholder')
 			mapholder.style.height ='500px';
 			mapholder.style.width ='750px';
 			var myOptions={
@@ -40,7 +40,7 @@ function refrescarUbicacion(){
 				navigationControlOptions:{style:google.maps.NavigationControlStyle.SMALL}
 			};
 			var map=new google.maps.Map(document.getElementById("mapholder"),myOptions);
-			var marked=new google.maps.Marker({position:latlon,map:map,title:"You are here!"});
+			var marker=new google.maps.Marker({position:latlon,map:map,title:"You are here!"});
 		}
 		function showError(error)
 		{
