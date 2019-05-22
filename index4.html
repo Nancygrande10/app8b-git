@@ -6,7 +6,7 @@
 </head>
 <body>
 <!--Se determina la localizacion-->
-<div id='ubicacion'></div>
+<div id="ubicacion"></div>
 <script type="text/javascript">
 if(navigator.geolocation){
 	navigator.geolocation.getCurrentPosition (mostrarUbicacion);
@@ -28,7 +28,7 @@ function refrescarUbicacion(){
 		function showPosition(position)
 		{
 			lat=position.coords.latitude;
-			lon=position.cooords.longitude;
+			lon=position.coords.longitude;
 			latlon=new google.maps.LatLng(lat,lon)
 			mapholder=document.getElementById('mapholder')
 			mapholder.style.height ='500px';
